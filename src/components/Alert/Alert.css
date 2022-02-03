@@ -1,0 +1,14 @@
+#error-alert {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 200px;
+}
+
+@media only screen and (max-width: 500px) {
+    #error-alert {
+        width: 80%;
+        position: relative;
+        margin: auto;
+    }
+}

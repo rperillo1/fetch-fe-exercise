@@ -1,0 +1,61 @@
+#form-container {
+    width: 430px;
+    margin: auto;
+    background-color: white;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid var(--blue-nav);
+    box-shadow: 0 0 7px var(--box-shadow);
+    -moz-box-shadow: 0 0 7px var(--box-shadow);
+    -webkit-box-shadow: 0 0 7px var(--box-shadow);
+}
+
+#contact-form>div {
+    display: flex;
+    padding: 6px;
+}
+
+#contact-form>div>label {
+    text-align: left;
+    width: 140px;
+    font-size: 22px;
+}
+
+#contact-form>div>input, #contact-form>div>select {
+    background-color: white;
+    border: none;
+    border-bottom: 1px solid var(--blue-nav);
+    width: 250px;
+    padding: 3px;
+    font-size: 19px;
+}
+
+#submit-btn {
+    color: var(--blue-nav);
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#submit-btn:hover {
+    color: white;
+    background-color: var(--blue-nav);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+    #form-container {
+        width: 80vw
+    }
+    #contact-form>div {
+        display: block;
+        text-align: left;
+    }
+    #contact-form>div>input, #contact-form>div>select {
+        width: 95%;
+    }
+}
